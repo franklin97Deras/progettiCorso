@@ -1,0 +1,320 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="una breve descrizione del contenuto pagina" /> <!--metatag descrizione per essere meglio trovato-->
+    <meta name="keywords" content="informatica, programmazione, keywords pertinenti" /> <!--metatag per keywords ricerche, spider legge anche il resto del sito-->
+    <meta name="author" content="classe di bitcamp" /> <!--autore sito-->
+    <meta name="robots" content="index,follow" /> <!--tag che parla direttament:index per essere ndicizzato no index per non essere indicizzati. follow per scandagliare sito nofollow per nno far controllare sito-->
+    <meta name="revisit-after" content="7 days" /> <!--ogni quanto devono ripassare spier per news-->
+    <meta name="language" content="it" id="language-meta"/> <!--lingua sito-->
+    <meta name="generator" content="visual studio" /> <!--sapere come è stato creato sito-->
+    <title>Contatti</title>
+    <link rel="stylesheet" type="text/css" href="StyleSheet1.css">
+</head>
+<body>
+    <!--i vari data-translate-key che vedete su ogni riga, servono solo per la traduzione, non inficiano sul css o sulle function di javascript-->
+    <header class="header">
+
+        <a href="homepage.html"> <img src="backNav.jpeg" class="imgNavbar" /> </a>
+
+        <input class="menu-btn" id="menu-btn" type="checkbox" />
+        <label class="menu-icon" for="menu-btn">
+            <span class="nav-icon"></span>
+        </label> <!--for fa riferimento a id input-->
+
+        <ul class="menu">
+            <li> <a class="navbarElements" href="homepage.html" data-translate-key="home">Home</a> </li>
+            <li> <a class="navbarElements" href="autenticazioneClienti.html" data-translate-key="areaClienti"> Area clienti</a> </li>
+            <li> <a class="navbarElements" href="autenticazioneTecnici.html" data-translate-key="areaTecnici"> Area tecnici</a> </li>
+            <li> <a class="navbarElements" href="gestioneAnagraficaDellaClientela.html" data-translate-key="registrati"> Registrati</a> </li>
+            <li> <a class="navbarElements" style="background-color: #1E1065;color:white;" href="contatti.html" data-translate-key="contatti"> Contatti</a> </li>
+            <li class="bandiere" id="language-selector">
+                <button class="itCss" data-lang="it"> <img class="buttonImg" src="bandItaliana.jpg" /></button>
+                <button class="enCss" data-lang="en"> <img class="buttonImg" src="bandInglese.jpg" /></button>
+            </li>
+        </ul>
+
+    </header>
+    <br/><br/>
+
+    <div>
+        <h1 style="text-align:center;font-size:50px;" class="scritte" data-translate-key="h1Contatti">Contatti</h1> <!--c:data classe per traduzione-->
+    </div>
+
+    <div class="contattiServizi">
+
+        <section class="sectionC">
+
+            <div class="contact-info">
+                <h3 class="scritte" data-translate-key="h3Servizi">Per i servizi di:</h3> <!--c:data classe per traduzione-->
+                <ul class="ulC">
+                    <li class="liC" data-translate-key="liC1"><strong>Vendita diretta;</strong></li> <!--c:data classe per traduzione-->
+                    <li class="liC" data-translate-key="liC2"><strong>Aggiornamento software;</strong></li> <!--c:data classe per traduzione-->
+                    <li class="liC" data-translate-key="liC3"><strong>Cybersecurity;</strong></li> <!--c:data classe per traduzione-->
+                    <li class="liC" data-translate-key="liC4"><strong>Ricambi Hardware;</strong></li> <!--c:data classe per traduzione-->
+                    <li class="liC" data-translate-key="liC5"><strong>Valutazione usato;</strong></li> <!--c:data classe per traduzione-->
+                </ul>
+                <p class="scritte" data-translate-key="pC1"> potete contattarci ai recapiti che trovate qui sotto </p> <!--c:data classe per traduzione-->
+                <br />
+                <p class="scritte" data-translate-key="pC2"> oppure compilare il form qui accanto per prendere un appuntamento. </p> <!--c:data classe per traduzione-->
+                <br />
+                <br />
+
+
+                <p class="scritte" data-translate-key="pC3"> <strong>Email:</strong> info@bitrepair.com </p> <br /> <!--c:data classe per traduzione-->
+                <p class="scritte" data-translate-key="pC4"> <strong>Telefono:</strong> +39 0812044158</p><br /><br /> <!--c:data classe per traduzione-->
+                <p class="scritte" data-translate-key="pC5">  <strong>Whatsapp:</strong>3341234567 </p><br /><br /> <!--c:data classe per traduzione-->
+                <p class="scritte" data-translate-key="pC6"> Per la vendita diretta vi aspettiamo direttamente in negozio!</p> <!--c:data classe per traduzione-->
+                <br />
+                <br />
+                <p class="scritte" data-translate-key="pC7"> <strong>Indirizzo:</strong>Via  dei riparatori, 20 80121 Napoli-NA</p> <!--c:data classe per traduzione-->
+
+            </div>
+            <div class="contact-form">
+                <h3 class="scritte" data-translate-key="h31">Hai domande?</h3> <!--c:data classe per traduzione-->
+                <h3 class="scritte" data-translate-key="h32">Vuoi prendere un appuntamento?</h3> <!--c:data classe per traduzione-->
+                <h3 class="scritte" data-translate-key="h33">Scrivici!</h3> <!--c:data classe per traduzione-->
+                <form action="process-form.php" method="POST">
+                    <label class="labelC" data-translate-key="l1" for="name">Nome:</label>  <!--c:data classe per traduzione-->
+                    <input class="inputTextC" type="text" id="name" name="name" required>
+                    <br />
+                    <label class="labelC" data-translate-key="l2" for="email">Email:</label>  <!--c:data classe per traduzione-->
+                    <input class="inputTextC" type="email" id="email" name="email" required>
+                    <br />
+                    <label class="labelC" data-translate-key="l3" for="message">Oggetto del messaggio:</label>  <!--c:data classe per traduzione-->
+                    <textarea class="inputTextC" id="message" name="message" rows="4" required></textarea>
+                    <br />
+                    <div>
+                        <button class="pulsanteC" data-translate-key="pulsanteC" onclick="inviaMessaggio()">Invia Messaggio</button>  <!--c:data classe per traduzione-->
+                    </div>
+                </form>
+            </div>
+        </section>
+    </div>
+
+
+    <footer class="footer">
+        <!--c:tolta la classe footerElements-->
+
+        <div class="textFooter">
+            <!--c:aggiunta la classe text footer per prova -->
+            <h9 class="scritteFooter" data-translate-key="h9"><strong>Contatti</strong></h9> <!--c: cambiato da h4 a h9-->
+            <p class="scritteFooter" data-translate-key="p1">Email:info@bitrepair.com</p> <!--cambiati dati nel footer-->
+            <p class="scritteFooter" data-translate-key="p2">Telefono: +39 0812044158</p>
+            <p class="scritteFooter" data-translate-key="p3">Via  dei riparatori, 20 80121 Napoli-NA</p>
+
+        </div>
+
+        <div class="textFooter">
+            <!--c:aggiunta la classe text footer per prova -->
+            <h9 class="scritteFooter" data-translate-key="h9bis"><strong>Social Media</strong></h9>
+            <p><a href="https://www.facebook.com/BitRepair" style="color:mediumpurple;">Facebook</a> <a href="https://twitter.com/BitRepair" style="color:mediumpurple;">Twitter</a></p>
+        </div>
+        <div class="bottom-text">
+            <p class="scritteFooter" data-translate-key="p5">Informativa privacy</p> <!--c:aggiunto-->
+            <p class="scritteFooter" data-translate-key="p6">Cookie e policy</p> <!--c:aggiunto-->
+            <p class="scritteFooter" data-translate-key="p7">&copy; 2023 Assistenza Tecnica. Tutti i diritti riservati.</p>
+        </div>
+    </footer>
+
+    <script>
+
+        function inviaMessaggio() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+
+            console.log(name + email + message);
+
+            if (name === "" || email === "" || message === "") { //obbligo di compilazione dei campi di riparazione e di costo
+                alert(translations[document.documentElement.lang].compilaAlert);
+                return false; //il modulo non viene inviato
+            } else {
+
+                var array = [];
+
+
+                array.push(name);
+                array.push(email);
+                array.push(message);
+
+                console.log(array);
+                alert(translations[document.documentElement.lang].confermaAlert);
+
+
+            }
+        }
+        const translations = {
+            it: {//qui metto tutte le scritte che vanno tradotte, richiamandole con il valore inserito nel data-translate-key
+                home: "Home",
+                contatti: "Contatti",
+                registrati: "Registrati",
+                areaClienti: "Area clienti",
+                areaTecnici: "Area tecnici",
+                //fatto da Corinne
+                h1Contatti: "Contatti",
+                h3Servizi: "Per i servizi di:",
+                liC1: "Vendita diretta",
+                liC2: "Aggiornamento software",
+                liC3: "Cybersecurity",
+                liC4: "Ricambi Hardware",
+                liC5: "Valutazione usato",
+                pC1: "potete contattarci ai recapiti che trovate qui sotto",
+                pC2: "oppure compilare il form qui accanto per prendere un appuntamento.",
+                pC3: "Email: info@bitrepair.com",
+                pC4: "Telefono: +39 0812044158",
+                pC5: "Whatsapp: 3341234567",
+                pC6: "Per la vendita diretta vi aspettiamo direttamente in negozio!",
+                pC7: "Indirizzo: Via  dei riparatori, 20 80121 Napoli-NA",
+                h31: "Hai domande?",
+                h32: "Vuoi prendere un appuntamento?",
+                h33: "Scrivici!",
+                l1: "Nome",
+                l2: "Email",
+                l3: "Oggetto del messaggio",
+                pulsanteC: "Invia messaggio",
+
+                //footer
+                h9: "Contatti",
+                p1: "Email: info@bitrepair.com",
+                p2: "Telefono: +39 0812044158",
+                p3: "Via  dei riparatori, 20 80121 Napoli-NA",
+                h9bis: "Social Media",
+                p5: "Informativa privacy",
+                p6: "Cookie e policy",
+                p7: "& copy; 2023 Assistenza Tecnica.Tutti i diritti riservati.",
+
+                //alert
+                compilaAlert: "Compila i campi obbligatori prima di inviare",
+                confermaAlert: "Abbiamo ricevuto la tua richiesta. Riceverai una risposta quanto prima!",
+
+
+
+                // Altri testi in italiano
+            },
+
+            en: {//qui richiamo gli stessi data-translate-key di sopra, cambiando il contenuto nella lingua di interesse
+                home: "Home",
+                contatti: "Contact",
+                registrati: "Sign it",
+                areaClienti: "Customer area",
+                areaTecnici: "Technical Area",
+
+                //fatto da Corinne
+                h1Contatti: "Contacts",
+                h3Servizi: "For the services of:",
+                liC1: "Direct sales",
+                liC2: "Software Update",
+                liC3: "Cybersecurity",
+                liC4: "Hardware Spare Parts",
+                liC5: "Second- hand rating",
+                pC1: "you can contact us at the contact information below",
+                pC2: "or fill out the form next door to make an appointment.",
+                pC3: "Email: info@bitrepair.com",
+                pC4: "Telephone: +39 0812044158",
+                pC5: "Whatsapp: 3341234567",
+                pC6: "For direct sales we are waiting for you directly in the store!",
+                pC7: "Address: Via  dei riparatori, 20 80121 Napoli-NA",
+                h31: "Do you have any questions?",
+                h32: "Do you want to make an appointment?",
+                h33: "Write to us!",
+                l1: "Name",
+                l2: "Email",
+                l3: "Message Subject.",
+                pulsanteC: "Send message",
+
+
+
+
+
+                //footer
+                h9: "Contact",
+                p1: "Email: info@bitrepair.com",
+                p2: "Telephone: +39 0812044158",
+                p3: "Via  dei riparatori, 20 80121 Napoli-NA",
+                h9bis: "Social Media",
+                p5: "Privacy",
+                p6: "Cookie and policy",
+                p7: "& copy; 2023 Technical Support. All rights reserved.",
+
+                //alert
+                compilaAlert: "Fill in the mandatory fields before sending",
+                confermaAlert: "We have received your request. You will receive a response as soon as possible!!",
+
+                // Altri testi in inglese
+            },
+            // Altre lingue se necessario
+
+
+        };
+
+
+        function changeLanguage(lang) {//per ogni class che devo richiamare, va creata una nuova const e quindi una funzione forEach per ogni const,altrimenti non funziona
+            const navs = document.querySelectorAll('.navbarElements');
+            const elements = document.querySelectorAll('.scritte');
+            const elementsliC = document.querySelectorAll('.liC'); //fatto da Corinne
+            const elementspulsanteC = document.querySelectorAll('.pulsanteC') //fatto da Corinne
+            const elementslabelC = document.querySelectorAll('.labelC');//fatto da Corinne
+            const footers = document.querySelectorAll('.scritteFooter');
+
+            navs.forEach(nav => {
+                const key = nav.getAttribute('data-translate-key');
+                nav.innerText = translations[lang][key];
+            });
+
+            elements.forEach(element => {
+                const key = element.getAttribute('data-translate-key');
+                element.innerText = translations[lang][key];
+            });
+            elementsliC.forEach(liC => { //fatto da Corinne
+                const key = liC.getAttribute('data-translate-key');
+                liC.innerText = translations[lang][key];
+            });
+            elementspulsanteC.forEach(pulsanteC => { //fatto da Corinne
+                const key = pulsanteC.getAttribute('data-translate-key');
+                pulsanteC.innerText = translations[lang][key];
+            });
+            elementslabelC.forEach(labelC => { //fatto da Corinne
+                const key = labelC.getAttribute('data-translate-key');
+                labelC.innerText = translations[lang][key];
+            });
+            footers.forEach(footer => {
+                const key = footer.getAttribute('data-translate-key');
+                footer.innerText = translations[lang][key];
+            });
+
+            // Aggiorna l'attributo lang sull'elemento HTML
+            document.documentElement.lang = lang;
+
+            // Imposta il cookie con la lingua selezionata
+            document.cookie = `language=${lang}`;
+        }
+
+        // Inizializza la lingua all'avvio, leggendo il cookie
+        const savedLanguage = document.cookie.replace(/(?:(?:^|.*;\s*)language\s*=\s*([^;]*).*$)|^.*$/, '$1');
+        changeLanguage(savedLanguage || 'it');
+
+        // Aggiungi un gestore di eventi per il selettore di lingua
+        const languageSelector = document.getElementById('language-selector');
+        languageSelector.addEventListener('click', (event) => {
+            if (event.target.tagName === 'BUTTON') {
+                const lang = event.target.getAttribute('data-lang');
+                changeLanguage(lang);
+            }
+        });
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

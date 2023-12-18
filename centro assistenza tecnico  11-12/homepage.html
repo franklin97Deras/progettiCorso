@@ -1,0 +1,254 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <!--C: aggiunti i meta-->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="una breve descrizione del contenuto pagina" /> <!--metatag descrizione per essere meglio trovato-->
+    <meta name="keywords" content="informatica, programmazione, keywords pertinenti" /> <!--metatag per keywords ricerche, spider legge anche il resto del sito-->
+    <meta name="author" content="classe di bitcamp" /> <!--autore sito-->
+    <meta name="robots" content="index,follow" /> <!--tag che parla direttament:index per essere ndicizzato no index per non essere indicizzati. follow per scandagliare sito nofollow per nno far controllare sito-->
+    <meta name="revisit-after" content="7 days" /> <!--ogni quanto devono ripassare spier per news-->
+    <meta name="language" content="it" id="language-meta" /> <!--lingua sito-->
+    <meta name="generator" content="visual studio" /> <!--sapere come è stato creato sito-->
+    <title>Bit Repair</title>
+    <link rel="stylesheet" type="text/css" href="StyleSheet1.css">
+   
+</head>
+
+<body>
+    <!--i vari data-translate-key che vedete su ogni riga, servono solo per la traduzione, non inficiano sul css o sulle function di javascript-->
+    <header class="header">
+
+        <a href="homepage.html"> <img src="backNav.jpeg" class="imgNavbar" /> </a>
+
+        <input class="menu-btn" id="menu-btn" type="checkbox" />
+        <label class="menu-icon" for="menu-btn">
+            <span class="nav-icon"></span>
+        </label> <!--for fa riferimento a id input-->
+
+        <ul class="menu">
+            <li> <a class="navbarElements" style="background-color: #1E1065;color:white;" href="homepage.html" data-translate-key="home">Home</a> </li>
+            <li> <a class="navbarElements" href="autenticazioneClienti.html" data-translate-key="areaClienti"> Area clienti</a> </li>
+            <li> <a class="navbarElements" href="autenticazioneTecnici.html" data-translate-key="areaTecnici"> Area tecnici</a> </li>
+            <li> <a class="navbarElements" href="gestioneAnagraficaDellaClientela.html" data-translate-key="registrati"> Registrati</a> </li>
+            <li> <a class="navbarElements" href="contatti.html" data-translate-key="contatti"> Contatti</a> </li>
+            <li class="bandiere" id="language-selector">
+                <button class="itCss" data-lang="it"> <img class="buttonImg" src="bandItaliana.jpg" /></button>
+                <button class="enCss" data-lang="en"> <img class="buttonImg" src="bandInglese.jpg" /></button>
+            </li>
+        </ul>  
+        
+    </header>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <div>
+        <h1 class="scritte" data-translate-key="h1" style="text-align:center;font-size:50px;">I nostri servizi</h1>
+    </div>
+
+    <div class="bunker">
+        <!--blocco per le 6 immagini dei servizi offerti,inizia qui-->
+        <div class="image-block">
+            <div>
+                <a href="gestioneAnagraficaDellaClientela.html">  <img src="repair1.jpg" alt="Immagine 1" class="image"> </a>
+                <h2 class="scritte" data-translate-key="h2assistenza">Assistenza Tecnica</h2>
+            </div>
+            <div>
+                <a href="Contatti.html"> <img src="negozio.jpg" alt="Immagine 2" class="image"> </a>
+                <h2 class="scritte" data-translate-key="h2vendita">Vendita diretta</h2>
+            </div>
+            <div>
+                <a href="Contatti.html"> <img src="shop.jpg" alt="Immagine 3" class="image"> </a>
+                <h2 class="scritte" data-translate-key="h2software">Aggiornamento software</h2>
+            </div>
+        </div>
+    </div>
+    <div class="bunker">
+        <div class="image-block">
+            <div>
+                <a href="Contatti.html"><img src="cybersecurity.jpg" alt="Immagine 4" class="image"></a>
+                <h2 class="scritte" data-translate-key="h2cybersecurity">Cybersecurity</h2>
+            </div>
+            <div>
+                <a href="Contatti.html"> <img src="hardware.jpg" alt="Immagine 5" class="image"></a>
+                <h2 class="scritte" data-translate-key="h2hardware">Ricambi Hardware</h2>
+            </div>
+            <div>
+                <a href="Contatti.html"><img src="usato.jpg" alt="Immagine 6" class="image"></a>
+                <h2 class="scritte" data-translate-key="h2usato">Valutazione usato</h2>
+            </div>
+        </div>
+    </div><!--e finisce qui-->
+
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+
+
+    <div class="container2">
+        <!--paragrafo in azzurro con la scritta e immagine con i loghi di lato-->
+        <div class="text-container">
+            <!--perché ho cambiato testo e non i vede MANNAGGIA-->
+            <h1 class="scritte" data-translate-key="h1container"> -- Con noi, i tuoi dispositivi e i tuoi dati saranno sempre al sicuro -- </h1><br /><br />
+            <h2 class="scritte" data-translate-key="h2container"> Affidati a chi lavora,ogni giorno, con passione  </h2><br /><br />
+            <h3 class="scritte" data-translate-key="h3container"> Esperienza pluriennale nel settore </h3>
+        </div>
+
+        <div>
+            <img style="height:400px;" src="partnerLogo.png" alt="Immagine">
+        </div>
+    </div>
+
+
+
+    <footer class="footer">
+        <!--c:tolta la classe footerElements-->
+
+        <div class="textFooter">
+            <!--c:aggiunta la classe text footer per prova -->
+            <h9 class="scritteFooter" data-translate-key="h9"><strong>Contatti</strong></h9> <!--c: cambiato da h4 a h9-->
+            <p class="scritteFooter" data-translate-key="p1">Email:info@bitrepair.com</p> <!--cambiati dati nel foote-->
+            <p class="scritteFooter" data-translate-key="p2">Telefono: +39 0812044158</p>
+            <p class="scritteFooter" data-translate-key="p3">Via  dei riparatori, 20 80121 Napoli-NA</p>
+
+        </div>
+
+        <div class="textFooter">
+            <!--c:aggiunta la classe text footer per prova -->
+            <h9 class="scritteFooter" data-translate-key="h9bis"><strong>Social Media</strong></h9>
+            <p><a href="https://www.facebook.com/BitRepair" style="color:mediumpurple;">Facebook</a> <a href="https://twitter.com/BitRepair" style="color:mediumpurple;">Twitter</a></p>
+        </div>
+        <div class="bottom-text">
+            <p class="scritteFooter" data-translate-key="p5">Informativa privacy</p> <!--c:aggiunto-->
+            <p class="scritteFooter" data-translate-key="p6">Cookie e policy</p> <!--c:aggiunto-->
+            <p class="scritteFooter" data-translate-key="p7">&copy; 2023 Assistenza Tecnica. Tutti i diritti riservati.</p>
+        </div>
+
+    </footer>
+
+
+    <script>
+
+        //questo è per tutta la parte delle traduzioni. Inizia qui ....
+        // Contenuto delle traduzioni...una volta impostato questo possiamo fare anche più lingue volendo
+        const translations = {
+            it: {//qui metto tutte le scritte che vanno tradotte, richiamandole con il valore inserito nel data-translate-key
+                home: "Home",
+                contatti: "Contatti",
+                registrati: "Registrati",
+                areaClienti: "Area clienti",
+                areaTecnici: "Area tecnici",
+                h1: "I nostri servizi",
+                h2assistenza: "Assistenza Tecnica",
+                h2vendita: "Vendita diretta",
+                h2software: "Aggiornamento software",
+                h2cybersecurity: "Cybersecurity",
+                h2hardware: "Ricambi Hardware",
+                h2usato: "Valutazione usato",
+                h1container: "-- Con noi, i tuoi dispositivi e i tuoi dati saranno sempre al sicuro --",
+                h2container: "Affidati a chi lavora,ogni giorno, con passione",
+                h3container: "Esperienza pluriennale nel settore",
+                h9: "Contatti",
+                p1: "Email: info@bitrepair.com",
+                p2: "Telefono: +39 0812044158",
+                p3: "Via  dei riparatori, 20 80121 Napoli-NA",
+                h9bis: "Social Media",
+                p5: "Informativa privacy",
+                p6: "Cookie e policy",
+                p7: "& copy; 2023 Assistenza Tecnica.Tutti i diritti riservati.",
+
+
+
+
+                // Altri testi in italiano
+            },
+
+            en: {//qui richiamo gli stessi data-translate-key di sopra, cambiando il contenuto nella lingua di interesse
+                home: "Home",
+                contatti: "Contact",
+                registrati: "Sign it",
+                areaClienti: "Customer area",
+                areaTecnici: "Technical Area",
+                h1: "Our services",
+                h2assistenza: "Technical Assistance",
+                h2vendita: "Direct sales",
+                h2software: "Software Update",
+                h2cybersecurity: "Cybersecurity",
+                h2hardware: "Hardware Spare Parts",
+                h2usato: "Second-hand rating",
+                h1container: "-- With us, your devices and data are always safe --",
+                h2container: "Rely on those who work with passion every day",
+                h3container: "Many years of experience in the sector",
+                h9: "Contact",
+                p1: "Email: info@bitrepair.com",
+                p2: "Telephone: +39 0812044158",
+                p3: "Via  dei riparatori, 20 80121 Napoli-NA",
+                h9bis: "Social Media",
+                p5: "Privacy",
+                p6: "Cookie and policy",
+                p7: "& copy; 2023 Technical Support. All rights reserved.",
+
+                // Altri testi in inglese
+            },
+            // Altre lingue se necessario
+
+
+        };
+
+        // Funzione per cambiare la lingua
+        function changeLanguage(lang) {//per ogni class che devo richiamare, va creata una nuova const e quindi una funzione forEach per ogni const,altrimenti non funziona
+            const navs = document.querySelectorAll('.navbarElements');
+            const elements = document.querySelectorAll('.scritte');
+            const footers = document.querySelectorAll('.scritteFooter');
+
+            navs.forEach(nav => {
+                const key = nav.getAttribute('data-translate-key');
+                nav.innerText = translations[lang][key];
+            });
+
+            elements.forEach(element => {
+                const key = element.getAttribute('data-translate-key');
+                element.innerText = translations[lang][key];
+            });
+            footers.forEach(footer => {
+                const key = footer.getAttribute('data-translate-key');
+                footer.innerText = translations[lang][key];
+            });
+
+            // Aggiorna l'attributo lang sull'elemento HTML
+            document.documentElement.lang = lang;
+            // Imposta il cookie con la lingua selezionata
+            document.cookie = `language=${lang}`;
+        }
+        // Inizializza la lingua all'avvio, leggendo il cookie
+        const savedLanguage = document.cookie.replace(/(?:(?:^|.*;\s*)language\s*=\s*([^;]*).*$)|^.*$/, '$1');
+        changeLanguage(savedLanguage || 'it');
+
+        // Aggiungi un gestore di eventi per il selettore di lingua
+        const languageSelector = document.getElementById('language-selector');
+        languageSelector.addEventListener('click', (event) => {
+            if (event.target.tagName === 'BUTTON') {
+                const lang = event.target.getAttribute('data-lang');
+                changeLanguage(lang);
+            }
+        });
+
+
+
+
+
+    </script>
+</body>
+
+
+
+
+</html>

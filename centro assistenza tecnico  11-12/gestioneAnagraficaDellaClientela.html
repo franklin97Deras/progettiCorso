@@ -1,0 +1,440 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="una breve descrizione del contenuto pagina" /> <!--metatag descrizione per essere meglio trovato-->
+    <meta name="keywords" content="informatica, programmazione, keywords pertinenti" /> <!--metatag per keywords ricerche, spider legge anche il resto del sito-->
+    <meta name="author" content="classe di bitcamp" /> <!--autore sito-->
+    <meta name="robots" content="index,follow" /> <!--tag che parla direttament:index per essere ndicizzato no index per non essere indicizzati. follow per scandagliare sito nofollow per nno far controllare sito-->
+    <meta name="revisit-after" content="7 days" /> <!--ogni quanto devono ripassare spier per news-->
+    <meta name="language" content="it" id="language-meta" /> <!--lingua sito-->
+    <meta name="generator" content="visual studio" /> <!--sapere come è stato creato sito-->
+    <title>Inserimento dati cliente</title>
+    <link rel="stylesheet" type="text/css" href="StyleSheet1.css">
+</head>
+<body>
+    <!--i vari data-translate-key che vedete su ogni riga, servono solo per la traduzione, non inficiano sul css o sulle function di javascript-->
+    <header class="header">
+
+        <a href="homepage.html"> <img src="backNav.jpeg" class="imgNavbar" /> </a>
+
+        <input class="menu-btn" id="menu-btn" type="checkbox" />
+        <label class="menu-icon" for="menu-btn">
+            <span class="nav-icon"></span>
+        </label> <!--for fa riferimento a id input-->
+
+        <ul class="menu">
+
+            <li> <a class="navbarElements" href="homepage.html" data-translate-key="home">Home</a> </li>
+            <li> <a class="navbarElements" href="autenticazioneClienti.html" data-translate-key="areaClienti"> Area clienti</a> </li>
+            <li> <a class="navbarElements" href="autenticazioneTecnici.html" data-translate-key="areaTecnici"> Area tecnici</a> </li>
+            <li> <a class="navbarElements" style="background-color: #1E1065;color:white;"href="gestioneAnagraficaDellaClientela.html" data-translate-key="registrati"> Registrati</a> </li>
+            <li> <a class="navbarElements" href="contatti.html" data-translate-key="contatti"> Contatti</a> </li>
+            <li class="bandiere" id="language-selector">
+                <button class="itCss" data-lang="it"> <img class="buttonImg" src="bandItaliana.jpg" /></button>
+                <button class="enCss" data-lang="en"> <img class="buttonImg" src="bandInglese.jpg" /></button>
+            </li>
+        </ul>
+
+    </header>
+
+
+    <br /><br /><br /><br /><br /><br /><br /><br />
+    <div align="center">
+        <h1 class="inserimento" data-translate-key="inserimento">Inserimento Dati Cliente</h1> <!--INSERIMENTO DATI CLIENTI-->
+        <h2 class="inserimento" data-translate-key="h2"> Il tuo dispositivo ti dà qualche problema? </h2>
+        <h2 class="inserimento" data-translate-key="h2bis">Compila il form per ricevere assistenza!</h2>
+    </div>
+    <br />
+    <!--  <div align="center" class="inserimentoClienti">-->
+    <form name="invio" class="inserimentoClienti">
+        <table style="margin-left: 30%;">
+            <tr style="align-items: right inherit;">
+                <td style="text-align: right;">
+                    <label for="nome" class="form" data-translate-key="nome">Nome:</label>
+                </td>
+                <td>
+                    <input type="text" id="nome" required placeholder="Nome" />
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: right;">
+                    <label for="cognome" class="form" data-translate-key="cognome">Cognome:</label>
+                </td>
+                <td>
+                    <input type="text" id="cognome" required placeholder="Cognome" />
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: right;">
+                    <label for="indirizzo" class="form" data-translate-key="indirizzo">Indirizzo:</label>
+                </td>
+                <td>
+                    <input type="text" id="indirizzo" required placeholder="Indirizzo" />
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: right;">
+                    <label for="telefono" class="form" data-translate-key="telefono">Telefono:</label>
+                </td>
+                <td>
+                    <input type="number" id="telefono" required placeholder="telefono" />
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: right;">
+                    <label for="email" class="form" data-translate-key="email">Email:</label>
+                </td>
+                <td>
+                    <input type="email" id="email" required placeholder="email" />
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: right;">
+                    <label for="password" class="form" data-translate-key="password">Password:</label>
+                </td>
+                <td>
+                    <input type="password" id="password" required />
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: right; width: 250px;">
+                    <label for="passwordconferma" class="form" data-translate-key="ripetipassword">Ripeti Password:</label>
+                </td>
+                <td>
+                    <input type="password" id="confermapassword" required placeholder="reinserisci la password" />
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: right; width: 250px;">
+                    <select id="tipoProdotto" style="margin-bottom: 10px;margin-top: 10px;font-family: cursive, sans-serif;outline: 0;
+                    background:azure;border: 1px solid darkblue;padding: 5px;border-radius: 6px;font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+                        <option class="selector" value="---" data-translate-key="seleziona">Seleziona Tipo di Prodotto</option>
+                        <option class="selector" value="computer" data-translate-key="computer">Computer</option>
+                        <option class="selector" value="tablet" data-translate-key="tablet">Tablet</option>
+                        <option class="selector" value="smartphone" data-translate-key="smartphone">Smartphone</option>
+                        <option class="selector" value="altro" data-translate-key="altro">Altro</option>
+                    </select>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: right; width: 250px;">
+                    <label for="marcaModello" class="form" data-translate-key="marca">Marca e Modello:</label>
+                </td>
+                <td>
+                    <input type="text" id="marcaModello" required />
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: right; width: 250px;">
+                    <label for="numeroSerie" class="form" data-translate-key="serie">Numero di Serie:</label>
+                </td>
+                <td>
+                    <input type="text" id="numeroSerie" required />
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: right; width: 250px;">
+                    <label for="problemiRiscontrati" class="form" data-translate-key="problema">Problemi Riscontrati</label>
+                </td>
+                <td>
+                    <textarea style="width: 300px; height: 80px; resize: none;" type="text" id="problemiRiscontrati"></textarea>
+                </td>
+            </tr>
+        </table>
+
+
+
+        <div align="center">
+            <button onclick="inviaDati()" class="buttonAnagrafica" data-translate-key="invia">Invia Dati</button>
+        </div>
+    </form>
+    <br />
+
+
+    <footer class="footer">
+        <!--c:tolta la classe footerElements-->
+
+        <div class="textFooter">
+            <!--c:aggiunta la classe text footer per prova -->
+            <h9 class="scritteFooter" data-translate-key="h9"><strong>Contatti</strong></h9> <!--c: cambiato da h4 a h9-->
+            <p class="scritteFooter" data-translate-key="p1">Email:info@bitrepair.com</p> <!--cambiati dati nel foote-->
+            <p class="scritteFooter" data-translate-key="p2">Telefono: +39 0812044158</p>
+            <p class="scritteFooter" data-translate-key="p3">Via  dei riparatori, 20 80121 Napoli-NA</p>
+
+        </div>
+
+        <div class="textFooter">
+            <!--c:aggiunta la classe text footer per prova -->
+            <h9 class="scritteFooter" data-translate-key="h9bis"><strong>Social Media</strong></h9>
+            <p><a href="https://www.facebook.com/BitRepair" style="color:mediumpurple;">Facebook</a> <a href="https://twitter.com/BitRepair" style="color:mediumpurple;">Twitter</a></p>
+        </div>
+        <div class="bottom-text">
+            <p class="scritteFooter" data-translate-key="p5">Informativa privacy</p> <!--c:aggiunto-->
+            <p class="scritteFooter" data-translate-key="p6">Cookie e policy</p> <!--c:aggiunto-->
+            <p class="scritteFooter" data-translate-key="p7">&copy; 2023 Assistenza Tecnica. Tutti i diritti riservati.</p>
+        </div>
+
+    </footer>
+
+
+
+
+    <script>
+        function inviaDati() {
+            //recupera valori inseriti
+            var nome = document.getElementById("nome").value;
+            var cognome = document.getElementById("cognome").value;
+            var indirizzo = document.getElementById("indirizzo").value;
+            var telefono = document.getElementById("telefono").value;
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+            var confermapassword = document.getElementById("confermapassword").value;
+            var tipoProdotto = document.getElementById("tipoProdotto").value;
+            var marcaModello = document.getElementById("marcaModello").value;
+            var numeroSerie = document.getElementById("numeroSerie").value;
+            var problemiRiscontrati = document.getElementById("problemiRiscontrati").value;
+
+            console.log(nome + cognome + indirizzo + email + password + tipoProdotto + marcaModello + numeroSerie + problemiRiscontrati);
+            if ((nome == '') || (nome == "undefined")) {
+                alert(translations[document.documentElement.lang].nomeAlert);
+                docume.nome.focus();
+            } else if ((cognome == '') || (nome == "undefined")) {
+                alert(translations[document.documentElement.lang].cognomeAlert);
+                docume.nome.focus();
+            } else if ((indirizzo == '') || (nome == "undefined")) {
+                alert(translations[document.documentElement.lang].indirizzoAlert);
+                docume.nome.focus();
+            } else if ((email == '') || (nome == "undefined")) {
+                alert(translations[document.documentElement.lang].emailAlert);
+
+                docume.nome.focus();
+            } else if ((isNaN(telefono)) || (telefono == "") || (telefono == "undefined")) {
+                alert(translations[document.documentElement.lang].telefonoAlert);
+
+                document.invio.telefono.value = "";
+                document.invio.telefono.focus();
+            } else if (password.length < 6 || (password == "") || (password == "undefined")) {
+                alert(translations[document.documentElement.lang].passwordAlert);
+
+                document.invio.password.focus();
+            } else if ((confermapassword == "") || (confermapassword == "undefined")) {//Effettua il controllo sul campo CONFERMA PASSWORD
+
+                alert(translations[document.documentElement.lang].confermaPasswordAlert);
+
+                document.invio.confermapassword.focus();
+                return false;
+            } else if (password != confermapassword) {
+                alert(translations[document.documentElement.lang].nonCorrispPassAlert);
+
+                document.invio.confermapassword.value = "";
+                document.invio.confermapassword.focus();
+            } else {
+                alert(translations[document.documentElement.lang].grazieMessage);
+
+                document.invio.submit();
+                //crea array con elementi cliente
+                var array = [];
+                array.push(nome);
+                array.push(cognome);
+                array.push(indirizzo);
+                array.push(telefono);
+                array.push(email);
+                array.push(password);
+                array.push(tipoProdotto);
+                array.push(marcaModello);
+                array.push(numeroSerie);
+                array.push(problemiRiscontrati);
+                //vogliamo mettere un alert quando premiamo su invia?
+                //alert(translations[document.documentElement.lang].grazieMessage);
+
+                //e dopo aver cliccato  ok..vogliamo cancellare i campi ?
+                document.getElementById("nome").value = "";
+                document.getElementById("cognome").value = "";
+                document.getElementById("indirizzo").value = "";
+                document.getElementById("email").value = "";
+                document.getElementById("telefono").value = "";
+                document.getElementById("password").value = "";
+                document.getElementById("tipoProdotto").value = "---";
+                document.getElementById("marcaModello").value = "";
+                document.getElementById("numeroSerie").value = "";
+                document.getElementById("problemiRiscontrati").value = "";
+            }
+        }
+
+
+
+        //questo è per tutta la parte delle traduzioni. Inizia qui ....
+        // Contenuto delle traduzioni...una volta impostato questo possiamo fare anche più lingue volendo
+        const translations = {
+            it: {//qui metto tutte le scritte che vanno tradotte, richiamandole con il valore inserito nel data-translate-key
+                home: "Home",
+                contatti: "Contatti",
+                registrati: "Registrati",
+                areaClienti: "Area clienti",
+                areaTecnici: "Area tecnici",
+                nome: "Nome:",
+                cognome: "Cognome:",
+                indirizzo: "Indirizzo:",
+                telefono: "Telefono:",
+                ripetipassword: "Ripeti password",
+                email: "Email:",
+                password: "Password:",
+                marca: "Marca e Modello:",
+                serie: "Numero di Serie:",
+                problema: "Problemi Riscontrati:",
+                invia: "Invia Dati",
+                h2: "Il tuo dispositivo ti dà qualche problema?",
+                h2bis: "Compila il form per ricevere assistenza!",
+                inserimento: "Inserimento Dati Cliente",
+                seleziona: "Seleziona Tipo di Prodotto",
+                computer: "Computer",
+                tablet: "Tablet",
+                smartphone: "Smartphone",
+                altro: "Altro",
+                grazieMessage: "GRAZIE! Abbiamo ricevuto la tua richiesta",
+                h9: "Contatti",
+                p1: "Email: info@bitrepair.com",
+                p2: "Telefono: +39 0812044158",
+                p3: "Via  dei riparatori, 20 80121 Napoli-NA",
+                h9bis: "Social Media",
+                p5: "Informativa privacy",
+                p6: "Cookie e policy",
+                p7: "& copy; 2023 Assistenza Tecnica.Tutti i diritti riservati.",
+                nomeAlert: "Devi inserire un nome!",
+                cognomeAlert: "Devi inserire un cognome!",
+                indirizzoAlert: "Devi inserire un un indirizzo corretto!",
+                emailAlert: "Devi inserire una email!",
+                telefonoAlert: "Devi inserire il telefono, attenzione deve essere numerico!",
+                passwordAlert: "Scegli una password, minimo 6 caratteri",
+                confermaPasswordAlert: "Devi confermare la password",
+                nonCorrispPassAlert: "Le password non corrispondono.",
+
+
+
+
+
+
+                // Altri testi in italiano
+            },
+
+            en: {//qui richiamo gli stessi data-translate-key di sopra, cambiando il contenuto nella lingua di interesse
+                home: "Home",
+                contatti: "Contact",
+                registrati: "Sign it",
+                areaClienti: "Customer area",
+                areaTecnici: "Technical Area",
+                nome: "Name:",
+                cognome: "Surname:",
+                indirizzo: "Address:",
+                telefono: "Telephone:",
+                ripetipassword: "Repeat password",
+                email: "Email:",
+                password: "Password:",
+                marca: "Brand and Model:",
+                serie: "Serial Number:",
+                problema: "Problems:",
+                invia: "Submit",
+                h2: "Is your device giving you any problems?",
+                h2bis: "Fill out the form to receive assistance!",
+                inserimento: "Customer Data",
+                seleziona: "Select",
+                computer: "Computer",
+                tablet: "Tablet",
+                smartphone: "Smartphone",
+                altro: "Other",
+                grazieMessage: "THANK YOU! We have received your request",
+                h9: "Contact",
+                p1: "Email: info@bitrepair.com",
+                p2: "Telephone: +39 0812044158",
+                p3: "Via  dei riparatori, 20 80121 Napoli-NA",
+                h9bis: "Social Media",
+                p5: "Privacy",
+                p6: "Cookie and policy",
+                p7: "& copy; 2023 Technical Support. All rights reserved.",
+                nomeAlert: "You have to insert a name!",
+                cognomeAlert: "You have to insert a surname!",
+                indirizzoAlert: "You have to insert a correct address",
+                emailAlert: "You have to insert ad email",
+                telefonoAlert: "You have to insert a telephon number!",
+                passwordAlert: "Choose a password,at least 6 characters",
+                confermaPasswordAlert: "You have to confirm the password",
+                nonCorrispPassAlert: "Passwords do not match",
+
+
+
+                // Altri testi in inglese
+            },
+            // Altre lingue se necessario
+
+
+        };
+
+        // Funzione per cambiare la lingua
+        function changeLanguage(lang) {//per ogni class che devo richiamare, va creata una nuova const e quindi una funzione forEach per ogni const,altrimenti non funziona
+            const navs = document.querySelectorAll('.navbarElements');
+            const elements = document.querySelectorAll('.form');
+            const buttons = document.querySelectorAll('.buttonAnagrafica');
+            const inserts = document.querySelectorAll('.inserimento');
+            const selectors = document.querySelectorAll('.selector');
+            const footers = document.querySelectorAll('.scritteFooter');
+
+
+
+            navs.forEach(nav => {
+                const key = nav.getAttribute('data-translate-key');
+                nav.innerText = translations[lang][key];
+            });
+
+            elements.forEach(element => {
+                const key = element.getAttribute('data-translate-key');
+                element.innerText = translations[lang][key];
+            });
+            buttons.forEach(button => {
+                const key = button.getAttribute('data-translate-key');
+                button.innerText = translations[lang][key];
+            });
+
+            inserts.forEach(insert => {
+                const key = insert.getAttribute('data-translate-key');
+                insert.innerText = translations[lang][key];
+            });
+
+            selectors.forEach(selector => {
+                const key = selector.getAttribute('data-translate-key');
+                selector.innerText = translations[lang][key];
+            });
+
+            footers.forEach(footer => {
+                const key = footer.getAttribute('data-translate-key');
+                footer.innerText = translations[lang][key];
+            });
+            // Aggiorna l'attributo lang sull'elemento HTML
+            document.documentElement.lang = lang;
+
+            // Imposta il cookie con la lingua selezionata
+            document.cookie = `language=${lang}`;
+        }
+        // Inizializza la lingua all'avvio, leggendo il cookie
+        const savedLanguage = document.cookie.replace(/(?:(?:^|.*;\s*)language\s*=\s*([^;]*).*$)|^.*$/, '$1');
+        changeLanguage(savedLanguage || 'it');
+
+        // Aggiungi un gestore di eventi per il selettore di lingua
+        const languageSelector = document.getElementById('language-selector');
+        languageSelector.addEventListener('click', (event) => {
+            if (event.target.tagName === 'BUTTON') {
+                const lang = event.target.getAttribute('data-lang');
+                changeLanguage(lang);
+            }
+        });
+
+    </script>
+
+
+
+</body>
+</html>

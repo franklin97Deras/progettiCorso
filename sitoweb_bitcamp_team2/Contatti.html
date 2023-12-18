@@ -1,0 +1,262 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia|Indie Flower|Satisfy|Montserrat|Oswald&effect=outline">
+    <title>CoffeeHouse</title>
+    <style>
+        
+    </style>
+    <title>CoffeeHouse</title>
+</head>
+<body style="background-image:url('img/bg_pattern_chiaro.png')">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <!-- LOGO + SLOGAN SITO-->
+        <div style="background-color: #212529; color: bisque; font-family:'Sofia'; font-size: medium;">
+            <img src="img/logo.png" width="135" height="135" />
+            <h6 style="font-family: 'Oswald';">Dove il Gusto </h6><h6 style="font-family: 'Oswald';">Incontra la Condivisione </h6>
+        </div>
+        <a class="navbar-brand" href="#" style="font-family:'Sofia';text-shadow: 3px 3px 3px #ababab; font-size: 45px;">CoffeeHouse</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <!-- INIZIO MENU' -->
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <!--active quello a cui si riferisce il focus del link-->
+                    <a class="nav-link" style="font-family:'Oswald'; font-size: 22px;" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="font-family:'Oswald'; font-size: 22px;" href="menu.html">Menù</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="font-family:'Oswald'; font-size: 22px;"
+                       href="chi_siamo.html">Chi Siamo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" style="font-family:'Oswald'; font-size: 22px;"
+                       href="Contatti.html">Contatti</a>
+            </ul>
+        </div>
+    </nav>
+    </header>
+    <main>
+        </br></br></br>
+
+        <div class="container" align="center">
+
+            <div class="container-form" align="center" style="width:30%">
+                </br></br></br>
+                <h2 style="font-family: 'Oswald';text-shadow: 3px 3px 3px #ababab; font-size: xx-large;">Prenotazione</h2>
+                </br>
+                <form style="font-family: 'Oswald';text-shadow: 3px 3px 3px #ababab; font-size: xx-large;" align="left">
+                    <!-- Nome -->
+                    <div class="form-outline mb-4">
+                        <input type="text" id="form4Example1" class="form-control" />
+                        <label class="form-label" for="form4Example1">Nome</label>
+                    </div>
+
+                    <!-- Numero di Ospiti -->
+                    <div class="form-outline mb-4">
+                        <input type="number" id="form4Example2" class="form-control" />
+                        <label class="form-label" for="form4Example2">Numero di ospiti</label>
+                    </div>
+
+                    <!-- Data -->
+                    <div class="form-outline mb-4">
+                        <input type="date" id="form4Example2" class="form-control" />
+                        <label class="form-label" for="form4Example2">Data</label>
+                    </div>
+
+                    <!-- Ora -->
+                    <div class="form-outline mb-4">
+                        <input type="time" id="form4Example2" class="form-control" />
+                        <label class="form-label" for="form4Example2">Ora</label>
+                    </div>
+
+                    <!-- Invia -->
+
+                    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Invia
+                    </button>
+
+                    <!-- Modal - Conferma dopo l'invio del modulo -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Prenotazione confermata.</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    Grazie!
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+
+        </br></br></br>
+
+        <table align="center" style="width:60%">
+            <tr>
+                <td align="left" valign="top" style="width:500px">
+
+                    <h2 style="font-family: 'Oswald';text-shadow: 3px 3px 3px #ababab; font-size: xx-large;">Email</h2>
+                    <p>coffeshoop@gmail.com</p></br>
+                    <h2 style="font-family: 'Oswald';text-shadow: 3px 3px 3px #ababab; font-size: xx-large;">Telefono</h2>
+                    <p>+39 0001414111</p></br>
+                    <h2 style="font-family: 'Oswald';text-shadow: 3px 3px 3px #ababab; font-size: xx-large;">Indirizzo</h2>
+                    <p>Italia</p></br>
+                </td>
+
+                <td align="left" valign="top">
+
+                    <h2 style="font-family: 'Oswald';text-shadow: 3px 3px 3px #ababab; font-size: xx-large;">Richiedi informazioni</h2>
+                    <p>
+                        <form>
+                            <!-- Nome -->
+                            <div class="form-outline mb-4">
+                                <input type="text" id="form4Example1" class="form-control" />
+                                <label class="form-label" for="form4Example1">Nome</label>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="form-outline mb-4">
+                                <input type="email" id="form4Example2" class="form-control" />
+                                <label class="form-label" for="form4Example2">Email</label>
+                            </div>
+
+                            <!-- Oggetto -->
+                            <div class="form-outline mb-4">
+                                <textarea class="form-control" id="form4Example3" rows="1"></textarea>
+                                <label class="form-label" for="form4Example3">Oggetto</label>
+                            </div>
+
+                            <!-- Messaggio -->
+                            <div class="form-outline mb-4">
+                                <textarea class="form-control" id="form4Example3" rows="4"></textarea>
+                                <label class="form-label" for="form4Example3">Messaggio</label>
+                            </div>
+
+                            <!-- Invia -->
+                            <button type="submit" class="btn btn-dark btn-block mb-4">Invia</button>
+                        </form>
+                    </p></br>
+
+                </td>
+            </tr>
+
+        </table>
+    </main>
+    <footer>
+        <!-- <div class="container my-5"> -->
+        <!-- Footer -->
+        <footer class="text-center text-lg-start text-white"
+                style="background-color: #212529">
+            <div class="container p-4 pb-0">
+                <section class="">
+                    <div class="row">
+                        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold">
+                                Coffee Shop
+                            </h6>
+                            <p>
+                                Il cuore di un coffee shop è il caffè. Offre una vasta gamma di opzioni tra cui caffè espresso, cappuccino, macchiato, americano, latte, caffè filtrato e molto altro.
+                            </p>
+                        </div>
+                        <hr class="w-100 clearfix d-md-none" />
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold">PRODOTTI</h6>
+                            <p>
+                                <a class="text-white">Cappuccino</a>
+                            </p>
+                            <p>
+                                <a class="text-white">Caffe'</a>
+                            </p>
+                            <p>
+                                <a class="text-white">Cornetti</a>
+                            </p>
+                            <p>
+                                <a class="text-white">Pizza</a>
+                            </p>
+                        </div>
+
+                        <hr class="w-100 clearfix d-md-none" />
+
+                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                            <h6 class="text-uppercase mb-4 font-weight-bold">CONTATTI</h6>
+                            <p><i class="fas fa-home mr-3"></i>Italia</p>
+                            <p><i class="fas fa-envelope mr-3"></i> coffeshoop@gmail.com</p>
+                            <p><i class="fas fa-phone mr-3"></i> +39 0001414111</p>
+                            <p><i class="fas fa-print mr-3"></i> +39 0001414111</p>
+                        </div>
+                    </div>
+                </section>
+
+                <hr class="my-3">
+
+                <section class="p-3 pt-0">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-md-7 col-lg-8 text-center text-md-start">
+                            <div class="p-3">
+                                © 2023 Copyright:
+                                <a class="text-white" href="#">coffeeshoop.com</a>&nbsp; - &nbsp; <p style="display: inline;">Sitoweb creato dal Team2</p>
+                            </div>
+                            <!-- Copyright -->
+                        </div>
+                        <!-- Grid column -->
+                        <!-- Grid column -->
+                        <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+                            <!-- Facebook -->
+                            <a class="btn btn-outline-light btn-floating m-1"
+                               class="text-white"
+                               role="button">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+
+                            <!-- Twitter -->
+                            <a class="btn btn-outline-light btn-floating m-1"
+                               class="text-white"
+                               role="button">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+
+                            <!-- Google -->
+                            <a class="btn btn-outline-light btn-floating m-1"
+                               class="text-white"
+                               role="button">
+                                <i class="fab fa-google"></i>
+                            </a>
+
+
+                            <a class="btn btn-outline-light btn-floating m-1"
+                               class="text-white"
+                               role="button">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </footer>
+    </footer>
+
+</body>
+</html>

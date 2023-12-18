@@ -1,0 +1,182 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia|Indie Flower|Satisfy|Montserrat|Oswald&effect=outline">
+
+    <title>Menù Prodotti Caffè</title>
+        <style>
+            .product-container {
+                text-align: center;
+                margin: 20px;
+                display: inline-block;
+                width: 200px;
+            }
+
+            .product-image {
+                width: 150px;
+                height: 150px;
+            }
+
+            body {
+                background-color: beige) ;              
+                background-size: cover; /*permette di ricoprire l'intero body*/
+                margin: 0; /*rimuove margine esterno predefinito*/
+                padding: 0; /*rimuove margine interno*/
+            }
+
+            h1 {
+                color: red;
+                font-size: 36px;
+                text-align: center;
+                
+            }
+        </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <!-- LOGO + SLOGAN SITO-->   
+            <div style="background-color: #212529; color: bisque; font-family: 'Sofia'; font-size: medium;">
+              <img src="img/logo.png" width="135" height="135" />
+              <h6 style="font-family: 'Oswald';">Dove il Gusto </h6><h6 style="font-family: 'Oswald';">Incontra la Condivisione </h6>
+              </div>
+            <a class="navbar-brand" href="#" style="font-family: 'Sofia';text-shadow: 3px 3px 3px #ababab; font-size: 45px;">CoffeeHouse</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                    <!--Inizio Menù-->
+                    <!-- INIZIO MENU' -->
+                <ul class="navbar-nav" >
+                    <li class="nav-item active">
+                        <!--active quello a cui si riferisce il focus del link-->
+                        <a class="nav-link"style="font-family: 'Oswald'; font-size: 22px;" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="font-family: 'Oswald'; font-size: 22px;" href="menu.html">Menù</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"style="font-family: 'Oswald'; font-size: 22px;"
+                           href="chisiamo.html">Chi Siamo</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" style="font-family: 'Oswald'; font-size: 22px;"
+                         href="Contatti.html">Contatti</a>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+    <h1 style="font-family: 'Oswald';font-family: 'Oswald';background-image:url('img/bg_pattern_chiaro.png');">I NOSTRI PRODOTTI</h1>
+    <div id="product-slider" class="row justify-content-center" style="background-image:url('img/bg_pattern_chiaro.png')">
+        <div class="product-container" >
+            <img src="img/java_coffee5.png" alt="Caffè 1" class="product-image">
+            <h2 style="font-family: 'Oswald';">Caffè</h2>
+            <p style="font-family: 'Oswald';">le nostre migliori selezioni di caffè per accontentare ogni palato</p>
+            <p style="font-family: 'Oswald';">Prezzo: a partire da 1,00€</p>
+        </div>
+        <div class="product-container">
+            <img src="img/java_coffee5.png" alt="Caffè 2" class="product-image">
+            <h2 style="font-family: 'Oswald';">I Dolci</h2>
+            <p style="font-family: 'Oswald';">i nostri cornetti sfornati ogni mattina dai migliori artigiani</p>
+            <p style="font-family: 'Oswald';">Prezzo: a partire da 1.50€</p>
+        </div>
+        <div class="product-container">
+            <img src="img/java_coffee5.png" alt="Caffè 3" class="product-image">
+            <h2 style="font-family: 'Oswald';">I Salati</h2>
+            <p style="font-family: 'Oswald';">pizzette e focacce di produzione artigianale sfornate ogni giorno</p>
+            <p style="font-family: 'Oswald';">Prezzo: 9,99€ al kg</p>
+        </div>
+        <div class="product-container">
+            <img src="img/java_coffee5.png" alt="Caffè 4" class="product-image">
+            <h2 style="font-family: 'Oswald';">Le Tisane</h2>
+            <p style="font-family: 'Oswald';">la nostra migliore selezione di Tisane per un pomeriggio di lavoro</p>
+            <p style="font-family: 'Oswald';">Prezzo: 3,99€</p>
+        </div>
+        <div class="product-container">
+            <img src="img/java_coffee5.png" alt="Caffè 5" class="product-image">
+            <h2 style="font-family: 'Oswald';">Caffè Gourmet</h2>
+            <p style="font-family: 'Oswald';"> caffè con cioccolato,panna e tanto altro per i più golosi!</p>
+            <p style="font-family: 'Oswald';">Prezzo: a partire da 2,99€</p>
+        </div>
+    </div>
+    </main>
+    <footer>
+        <!-- <div class="container my-5"> -->
+            <!-- Footer -->
+            <footer
+                    class="text-center text-lg-start text-white"
+                    style="background-color: #212529; font-family: 'Montserrat';">
+              <div class="container p-4 pb-0">
+                <section class="">
+                  <div class="row">
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                      <h6 class="text-uppercase mb-4 font-weight-bold">
+                        Coffee Shop
+                      </h6>
+                      <p>
+                        Il cuore di un coffee shop è il caffè. Offre una vasta gamma di opzioni tra cui caffè espresso, cappuccino, macchiato, americano, latte, caffè filtrato e molto altro.
+                      </p>
+                    </div>
+                    <hr class="w-100 clearfix d-md-none" />
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                      <h6 class="text-uppercase mb-4 font-weight-bold">PRODOTTI</h6>
+                      <p>
+                        <a class="text-white">Cappuccino</a>
+                      </p>
+                      <p>
+                        <a class="text-white">Caffe'</a>
+                      </p>
+                      <p>
+                        <a class="text-white">Cornetti</a>
+                      </p>
+                      <p>
+                        <a class="text-white">Pizza</a>
+                      </p>
+                    </div>
+
+                    <hr class="w-100 clearfix d-md-none" />
+
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                      <h6 class="text-uppercase mb-4 font-weight-bold">CONTATTI</h6>
+                      <p><i class="fas fa-home mr-3"></i>Italia</p>
+                      <p><i class="fas fa-envelope mr-3"></i> coffee@shop.com</p>
+                      <p><i class="fas fa-phone mr-3"></i> +39 0001414111</p>
+                      <p><i class="fas fa-print mr-3"></i> +39 0001414111</p>
+                    </div>
+                  </div>
+                </section>
+            
+                <hr class="my-3">
+          
+                <section class="p-3 pt-0">
+                  <div class="row d-flex align-items-center">
+                    <div class="col-md-7 col-lg-8 text-center text-md-start">
+                      <div class="p-3">
+                        © 2023 Copyright:
+                        <a class="text-white" href="#">coffeeshoop.com</a>&nbsp; - &nbsp; <p style="display: inline;">Sitoweb creato dal Team2</p>
+                      </div>
+                      <!-- Copyright -->
+                    </div>
+                    <!-- Grid column -->
+          
+                    <!-- Grid column -->
+                    <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+                      <a href="#"><img src="img/facebook.png" width="40" height="40" /></a> 
+                      <a href="#"><img src="img/twetter.png" width="40" height="40" /></a>
+                      <a href="#"><img src="img/instagram.png" width="40" height="40" /></a>
+                      <a href="#"><img src="img/google.png" width="40" height="40" /></a>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </footer>
+    </footer>
+</body>
+</html>
